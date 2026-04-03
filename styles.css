@@ -1,0 +1,215 @@
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+/*a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}*/
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+textarea {
+	resize: vertical;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+input[type='file'] {
+	max-width: 100%;
+}
+
+/* Main styles */
+@font-face {
+    font-family: "MyriadPro";
+    src: url("fonts/MYRIADPRO-REGULAR.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body{
+	background-color: #b1c1e3;
+	font-family: "MyriadPro", sans-serif;
+	font-size: 14pt;
+}
+main{
+    color:  white;
+    width: 900px;
+    margin: 0 auto;
+}
+h1{
+	font-size: 24pt;
+	text-align: center;
+	color: #543c8f;
+	font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.downloadlink{
+	color: #543c8f;
+	padding: 10px;
+}
+.content {
+  width: 900px;
+  margin:  0 auto;
+  text-align: justify;
+  max-width: 900px;
+  text-align: justify;
+}
+/* Carousel conteiner */
+.carousel-container {
+    max-width: 800px;
+    width: 100%;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 0 auto; 
+}
+
+.carousel-slide {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+button {
+    background: #543c8f;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.dot.active {
+    background: #543c8f;
+    width: 25px;
+    border-radius: 5px;
+}
+.info {
+    text-align: center;
+    margin-top: 15px;
+    color: #666;
+    font-size: 14px;
+}
+
+.loading {
+    text-align: center;
+    padding: 50px;
+    color: #666;
+}
+.par{
+    margin-bottom: 15px;
+}
+main{
+    margin-bottom: 50px;
+}
